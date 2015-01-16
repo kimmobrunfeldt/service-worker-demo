@@ -18,11 +18,23 @@ Service Worker controls the pages in the background.
 At the time of writing, Service Worker can be only used in Chrome Canary.
 **Browser support now**: https://jakearchibald.github.io/isserviceworkerready/
 
+**Random facts**
+
+* No DOM access
+* Can communicate with pages with [pushMessage](https://html.spec.whatwg.org/multipage/workers.html#dom-worker-postmessage)
+* API returns promises
 
 ## Next steps
 
+* Further reading: http://jakearchibald.com/2014/service-worker-first-draft/
+* Also a good post: http://www.html5rocks.com/en/tutorials/service-worker/introduction/
 
-Further reading: http://jakearchibald.com/2014/service-worker-first-draft/
+* Technical introduction: https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker_API/Using_Service_Workers#Install_and_activate.3A_populating_your_cache
+
+* Get started with development: http://www.chromium.org/blink/serviceworker/getting-started
+
+* Push notifications: https://gauntface.com/blog/2014/12/15/push-notifications-service-worker
+
 
 **Talks to watch**
 
@@ -38,3 +50,8 @@ Further reading: http://jakearchibald.com/2014/service-worker-first-draft/
 
     Future of Service Worker. Implementing push notifications and other
     "native" app functionality to web apps.
+
+## Shortcuts
+
+* See all registered/running Service Workers: chrome://serviceworker-internals/
+* Inspect service workers in debugger: chrome://inspect/#service-workers
